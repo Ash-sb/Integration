@@ -1,13 +1,126 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <title>Trocdestrains</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Projet_PMD_SAIB_Ashley.css">
-    <title>Trocdestrains</title>
+    <link rel="stylesheet" href="integration.css">
   </head>
   <body>
-    <p>Hello world</p>
-    
+    <header>
+      <p>Trocdestrains</p>
+      <nav>
+        <ul>
+          <li>s'inscrire</li>
+          <li>se connecter</li>
+          <li>vendre</li>
+          <li>Comment ça marche?</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="formulaire">
+        <h1>N'hésite plus et achète ton billet de train moins cher qu'un billet neuf en toute sécurité !</h1>
+        <form method="post" action="traitement.php">
+          <div>
+            <label for="depart">Gare de départ </label>
+            <input type="search" name="depart" id="depart" placeholder="Choisis une gare de depart " size="35" maxlength="15" />
+          </div>
+          <div>
+            <label for="arrive">Gare d'arrivé </label>
+            <input type="search" name="arrive" id="arrive" placeholder="Choisis une gare d'arrive " size="35" maxlength="15" />
+          </div>
+          <div>
+            <label for="aller">Date aller</label>
+            <input type="date" name="aller" id="aller" size="35" maxlength="15" />
+          </div>
+          <div>
+            <label for="retour">Date retour </label>
+            <input type="date" name="retour" id="retour" size="35" maxlength="15" />
+          </div>
+          <div>
+            <button type="submit">Rechercher</button>
+          </div>
+        </form>
+        <h2>Un imprévu ? Vend ton billet de train !</h2>
+        <a class="button_sale" href="#">Vendre</a>
+      </section>
+      <section>
+        <h3>Derniers billets déposés</h3>
+        <article class="ticket">
+          <img>
+          <h4>PARIS -> RENNES</h4>
+          <time datetime="2021-01-16">Samedi 16 Janvier 2021</time>
+        </article>
+        <a class="button_last_ticket" href="#">Voir les derniers billets</a>
+        <h3>Billets en promo</h3>
+        <article class="ticket">
+          <img>
+          <h4>PARIS -> RENNES</h4>
+          <time datetime="2021-01-16">Samedi 16 Janvier 2021</time>
+        </article>
+        <a class="button_discount" href="#">Voir les promos</a>
+        <h3>Trajets populaires</h3>
+        <a class="popular_route" href="#">Voir les trajets populaires</a>
+        <article class="ticket">
+          <h4>PARIS -> RENNES</h4>
+        </article>
+      </section>
+      <section class="How_to_use">
+        <h2>Comment fonctionne Trocdestrains?</h2>
+        <article>
+          <img>
+          <h3>Dépose ton billet en ligne</h3>
+          <p>C'est gratuit et tu es guidé pas à pas !</p>
+        </article>
+        <article>
+          <img>
+          <h3>Vends ton billet</h3>
+          <p>Tu n'as plus qu'à patienter avant qu'un potentiel acheteur ne pointe le bout de son nez</p>
+        </article>
+        <article>
+          <img>
+          <h3>Remplis ton porte-monnaie !</h3>
+          <p>Il n'y a pas de frais de vente, la totalité du montant te reviens !</p>
+        </article>
+        <a class="button_sale" href="#">Vendre</a>
+        <article>
+          <img>
+          <h3>Trouve ton bonheur</h3>
+          <p>Recherche parmis une multitude de billets disponibles</p>
+        </article>
+        <article>
+          <img>
+          <h3>Achète en toute sécurité</h3>
+          <p>Tu peux envoyer un message au vendeur pour plus d'informations et payer en toute sécurité avec ta carte bleu ou Paypal.</p>
+        </article>
+        <article>
+          <img>
+          <h3>Profite de ton achat !</h3>
+          <p>Le vendeur t'enverra ton billet par mail ou voie postale selon le type de billet et tu le recevras sous quelques jours !</p>
+        </article>
+        <a class="button_search" href="#">Rechercher</a>
+      </section>
+      <section class="insurance">
+        <img>
+        <article>
+          <h3>Les billets mis en ligne sont controlés</h3>
+          <p>Chaque billet de train est contrôlé avant d'être validé puis finalement déposé sur le site. Ceci garanti à nos visiteurs de trouver sur Trocdestrains uniquement des billets totalement valide et utilisable dès leurs réception.</p>
+          <h3>Tes achats sont sécurisés</h3>
+          <p>Lorsque tu effectue un achat, tu es automatiquement protégé par la "garantie acheteur". Cette dernière t'offre une sécurité au niveau de tes achats et de tes informations personnelles. Grâce à elle, Trocdestrains conservera ton argent le temps que le vendeur envoie bien ton billet de train. Le coût est de 5% du prix de l'article + 0,50€.</p>
+        </article>
+        <img>
+        <article>
+          <h3>Ils ont testé Trocdestrains</h3>
+          <blockquote>"Grâce à troc des trains, j'ai pu vendre mes billets de trains non remboursables en quelques heures ! La procédure y est très bien expliqué et j'ai donc pu utiliser l'argent pour racheter des nouveaux billets que j'ai trouvé sur le site à moindre coût et en toute sécurité. JE RECOMMANDE !"</blockquote>
+          <h3>Nos utilisateurs nous ont donné la note de 4,5/5</h3>
+          <p>Note établie à partir des 1130 avis récoltés sur <a class="trustpilot" href="#">Trustpilot</a></p>
+          <a class="see_opinion" href="#">Voir tous les avis</a>
+        </article>
+      </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="integration.js"></script>
   </body>
 </html>
