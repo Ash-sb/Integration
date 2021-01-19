@@ -1,0 +1,38 @@
+.img {
+  height: 150px;
+  width: 150px;
+}
+
+.img2 {
+  height: 150px;
+  width: 150px;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  color: #FFBE00;
+}
+.icon-star {
+  width: 0.9287109375em;
+}
+
+.icon-shield {
+  width: 0.7138671875em;
+}
+
+.icon-group {
+  width: 1.0712890625em;
+}
+
+.icon-long-arrow-right {
+  width: 0.9638671875em;
+}
+
+.icon-arrow-down {
+  width: 0.9287109375em;
+}

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fr">
   <head>
     <title>Trocdestrains</title>
@@ -6,119 +7,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="integration.css">
   </head>
+
+
   <body>
+    <svg style="width:0; height: 0;">
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="M19.293 5.293l-10.293 10.293-4.293-4.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l5 5c0.391 0.391 1.024 0.391 1.414 0l11-11c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0z"></path>
+      </symbol>
+    </svg>
+    <svg style="width:0; height: 0;">
+      <symbol id="icon-shield" viewBox="0 0 20 28">
+        <path d="M17 15v-10h-7v17.766c0.797-0.422 2.078-1.156 3.328-2.141 1.672-1.313 3.672-3.359 3.672-5.625zM20 3v12c0 6.578-9.203 10.734-9.594 10.906-0.125 0.063-0.266 0.094-0.406 0.094s-0.281-0.031-0.406-0.094c-0.391-0.172-9.594-4.328-9.594-10.906v-12c0-0.547 0.453-1 1-1h18c0.547 0 1 0.453 1 1z"></path>
+      </symbol>
+    </svg>
+    <svg style="width:0; height: 0;">
+      <symbol id="icon-group" viewBox="0 0 30 28">
+        <path d="M9.266 14c-1.625 0.047-3.094 0.75-4.141 2h-2.094c-1.563 0-3.031-0.75-3.031-2.484 0-1.266-0.047-5.516 1.937-5.516 0.328 0 1.953 1.328 4.062 1.328 0.719 0 1.406-0.125 2.078-0.359-0.047 0.344-0.078 0.688-0.078 1.031 0 1.422 0.453 2.828 1.266 4zM26 23.953c0 2.531-1.672 4.047-4.172 4.047h-13.656c-2.5 0-4.172-1.516-4.172-4.047 0-3.531 0.828-8.953 5.406-8.953 0.531 0 2.469 2.172 5.594 2.172s5.063-2.172 5.594-2.172c4.578 0 5.406 5.422 5.406 8.953zM10 4c0 2.203-1.797 4-4 4s-4-1.797-4-4 1.797-4 4-4 4 1.797 4 4zM21 10c0 3.313-2.688 6-6 6s-6-2.688-6-6 2.688-6 6-6 6 2.688 6 6zM30 13.516c0 1.734-1.469 2.484-3.031 2.484h-2.094c-1.047-1.25-2.516-1.953-4.141-2 0.812-1.172 1.266-2.578 1.266-4 0-0.344-0.031-0.688-0.078-1.031 0.672 0.234 1.359 0.359 2.078 0.359 2.109 0 3.734-1.328 4.062-1.328 1.984 0 1.937 4.25 1.937 5.516zM28 4c0 2.203-1.797 4-4 4s-4-1.797-4-4 1.797-4 4-4 4 1.797 4 4z"></path>
+      </symbol>
+    </svg>
+    <svg style="width:0; height: 0;">
+      <symbol id="icon-star" viewBox="0 0 26 28">
+        <path d="M26 10.109c0 0.281-0.203 0.547-0.406 0.75l-5.672 5.531 1.344 7.812c0.016 0.109 0.016 0.203 0.016 0.313 0 0.406-0.187 0.781-0.641 0.781-0.219 0-0.438-0.078-0.625-0.187l-7.016-3.687-7.016 3.687c-0.203 0.109-0.406 0.187-0.625 0.187-0.453 0-0.656-0.375-0.656-0.781 0-0.109 0.016-0.203 0.031-0.313l1.344-7.812-5.688-5.531c-0.187-0.203-0.391-0.469-0.391-0.75 0-0.469 0.484-0.656 0.875-0.719l7.844-1.141 3.516-7.109c0.141-0.297 0.406-0.641 0.766-0.641s0.625 0.344 0.766 0.641l3.516 7.109 7.844 1.141c0.375 0.063 0.875 0.25 0.875 0.719z"></path>
+      </symbol>
+    </svg>
+    <svg>
+      <symbol id="icon-long-arrow-right" viewBox="0 0 27 28">
+        <path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+      </symbol>
+    </svg>
+    <svg>
+      <symbol id="icon-arrow-down" viewBox="0 0 26 28">
+        <path d="M25.172 13c0 0.531-0.219 1.047-0.578 1.406l-10.172 10.187c-0.375 0.359-0.891 0.578-1.422 0.578s-1.047-0.219-1.406-0.578l-10.172-10.187c-0.375-0.359-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.422l1.156-1.172c0.375-0.359 0.891-0.578 1.422-0.578s1.047 0.219 1.406 0.578l4.594 4.594v-11c0-1.094 0.906-2 2-2h2c1.094 0 2 0.906 2 2v11l4.594-4.594c0.359-0.359 0.875-0.578 1.406-0.578s1.047 0.219 1.422 0.578l1.172 1.172c0.359 0.375 0.578 0.891 0.578 1.422z"></path>
+      </symbol>
+    </svg>
     <header>
-      <p>Trocdestrains</p>
+      <img class="logo" src="image/trocdestrains.svg" alt="Troc des trains">
       <nav>
         <ul>
-          <li>s'inscrire</li>
-          <li>se connecter</li>
-          <li>vendre</li>
+          <li>s'inscrire/se connecter</li>
+          <li>Vends tes billets</li>
+          <li>messagerie</li>
+          <li>favoris</li>
+          <li>alertes</li>
           <li>Comment ça marche?</li>
         </ul>
       </nav>
     </header>
+
+
     <main>
+
+
       <section class="formulaire">
         <h1>N'hésite plus et achète ton billet de train moins cher qu'un billet neuf en toute sécurité !</h1>
         <form method="post" action="traitement.php">
           <div>
             <label for="depart">Gare de départ </label>
-            <input type="search" name="depart" id="depart" placeholder="Choisis une gare de depart " size="35" maxlength="15" />
+            <input type="search" name="depart" id="depart" placeholder="Choisis une gare de depart " size="35"/>
           </div>
           <div>
             <label for="arrive">Gare d'arrivé </label>
-            <input type="search" name="arrive" id="arrive" placeholder="Choisis une gare d'arrive " size="35" maxlength="15" />
+            <input type="search" name="arrive" id="arrive" placeholder="Choisis une gare d'arrive " size="35" />
           </div>
           <div>
             <label for="aller">Date aller</label>
-            <input type="date" name="aller" id="aller" size="35" maxlength="15" />
+            <input type="date" name="aller" id="aller" size="35"/>
           </div>
           <div>
             <label for="retour">Date retour </label>
-            <input type="date" name="retour" id="retour" size="35" maxlength="15" />
+            <input type="date" name="retour" id="retour" size="35"/>
           </div>
           <div>
-            <button type="submit">Rechercher</button>
+            <button>Rechercher</button>
           </div>
         </form>
         <h2>Un imprévu ? Vend ton billet de train !</h2>
         <a class="button_sale" href="#">Vendre</a>
       </section>
-      <section>
+
+
+      <section class="suggestions">
         <h3>Derniers billets déposés</h3>
+
         <article class="ticket">
-          <img>
-          <h4>PARIS -> RENNES</h4>
+          <img class="img_ticket" src="image/ticket.svg" alt="billet">
+          <h4>PARIS <svg class="icon icon-long-arrow-right" aria-hidden="true"><use xlink:href="#icon-long-arrow-right"></use></svg> RENNES</h4>
           <time datetime="2021-01-16">Samedi 16 Janvier 2021</time>
+
         </article>
         <a class="button_last_ticket" href="#">Voir les derniers billets</a>
         <h3>Billets en promo</h3>
         <article class="ticket">
-          <img>
-          <h4>PARIS -> RENNES</h4>
+          <img class="img_ticket" src="image/ticket.svg" alt="billet">
+          <h4>PARIS <svg class="icon icon-long-arrow-right" aria-hidden="true"><use xlink:href="#icon-long-arrow-right"></use></svg> RENNES</h4>
           <time datetime="2021-01-16">Samedi 16 Janvier 2021</time>
+
         </article>
         <a class="button_discount" href="#">Voir les promos</a>
         <h3>Trajets populaires</h3>
-        <a class="popular_route" href="#">Voir les trajets populaires</a>
-        <article class="ticket">
-          <h4>PARIS -> RENNES</h4>
+        <a class="button_popular_route" href="#">Voir les trajets populaires</a>
+
+        <article class="popular_route">
+          <h4>PARIS <svg class="icon icon-arrow-down"><use xlink:href="#icon-arrow-down" aria-hidden="true"></use></svg> RENNES</h4>
         </article>
+
       </section>
-      <section class="How_to_use">
+
+      <section class="how_to_use">
         <h2>Comment fonctionne Trocdestrains?</h2>
+
         <article>
-          <img>
+          <img class="img" src="image/holding-phone-colour.svg" alt="dépose ton billet">
           <h3>Dépose ton billet en ligne</h3>
           <p>C'est gratuit et tu es guidé pas à pas !</p>
         </article>
+
         <article>
-          <img>
+          <img class="img" src="image/handshake-colour.svg" alt="vend ton billet">
           <h3>Vends ton billet</h3>
           <p>Tu n'as plus qu'à patienter avant qu'un potentiel acheteur ne pointe le bout de son nez</p>
         </article>
+
         <article>
-          <img>
+          <img class="img" src="image/a-ok-colour.svg" alt="Remplis ton porte-monnaie">
           <h3>Remplis ton porte-monnaie !</h3>
           <p>Il n'y a pas de frais de vente, la totalité du montant te reviens !</p>
         </article>
+        
         <a class="button_sale" href="#">Vendre</a>
+
         <article>
-          <img>
+          <img class="img" src="image/ticket-colour.svg" alt="Trouve ton bonheur">
           <h3>Trouve ton bonheur</h3>
           <p>Recherche parmis une multitude de billets disponibles</p>
         </article>
+
         <article>
-          <img>
+          <img class="img" src="image/unlock.svg" alt="Achète en toute sécurité">
           <h3>Achète en toute sécurité</h3>
           <p>Tu peux envoyer un message au vendeur pour plus d'informations et payer en toute sécurité avec ta carte bleu ou Paypal.</p>
         </article>
+
         <article>
-          <img>
+          <img class="img" src="image/carry-on-colour.svg" alt="Profite de ton achat">
           <h3>Profite de ton achat !</h3>
           <p>Le vendeur t'enverra ton billet par mail ou voie postale selon le type de billet et tu le recevras sous quelques jours !</p>
         </article>
+
         <a class="button_search" href="#">Rechercher</a>
       </section>
+
       <section class="insurance">
-        <img>
+        <img class="img2" src="image/gamer-colour.svg" alt="Controle des billets">
+
         <article>
           <h3>Les billets mis en ligne sont controlés</h3>
+          <svg class="icon icon-check"><use xlink:href="#icon-check"></use></svg>
           <p>Chaque billet de train est contrôlé avant d'être validé puis finalement déposé sur le site. Ceci garanti à nos visiteurs de trouver sur Trocdestrains uniquement des billets totalement valide et utilisable dès leurs réception.</p>
           <h3>Tes achats sont sécurisés</h3>
+          <svg class="icon icon-shield"><use xlink:href="#icon-shield"></use></svg>
           <p>Lorsque tu effectue un achat, tu es automatiquement protégé par la "garantie acheteur". Cette dernière t'offre une sécurité au niveau de tes achats et de tes informations personnelles. Grâce à elle, Trocdestrains conservera ton argent le temps que le vendeur envoie bien ton billet de train. Le coût est de 5% du prix de l'article + 0,50€.</p>
+
         </article>
-        <img>
+
+        <img class="img2" src="image/social-feed-colour.svg" alt="billet">
+
         <article>
           <h3>Ils ont testé Trocdestrains</h3>
+          <svg class="icon icon-group"><use xlink:href="#icon-group"></use></svg>
           <blockquote>"Grâce à troc des trains, j'ai pu vendre mes billets de trains non remboursables en quelques heures ! La procédure y est très bien expliqué et j'ai donc pu utiliser l'argent pour racheter des nouveaux billets que j'ai trouvé sur le site à moindre coût et en toute sécurité. JE RECOMMANDE !"</blockquote>
+          <div>
+            <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+            <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+            <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+            <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+            <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+          </div>
           <h3>Nos utilisateurs nous ont donné la note de 4,5/5</h3>
+          <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
           <p>Note établie à partir des 1130 avis récoltés sur <a class="trustpilot" href="#">Trustpilot</a></p>
+          <div>
+            <img src="image/profil.svg" alt="photo de profil">
+          </div>
           <a class="see_opinion" href="#">Voir tous les avis</a>
         </article>
       </section>
+
     </main>
+
     <footer>
     </footer>
     <script src="integration.js"></script>
