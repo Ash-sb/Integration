@@ -1,3 +1,29 @@
+/* Etablissement des fonts*/
+
+@font-face {
+  font-family: 'work_sans';
+  src: url("/fonts/webfontkit-20210120-113730/worksans-regular-webfont.woff2") format('woff2'),
+       url("/fonts/webfontkit-20210120-113730/worksans-regular-webfont.woff") format('woff'),
+       url("/fonts/webfontkit-20210120-113730/worksans-regular-webfont.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'work_sans';
+  src: url("/fonts/webfontkit-20210120-113730/worksans-medium-webfont.woff2") format('woff2'),
+       url("/fonts/webfontkit-20210120-113730/worksans-medium-webfont.woff") format('woff'),
+       url("/fonts/webfontkit-20210120-113730/worksans-medium-webfont.ttf") format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'work_sans';
+  src: url("/fonts/webfontkit-20210120-113730/worksans-italic-webfont.woff2") format('woff2'),
+       url("/fonts/webfontkit-20210120-113730/worksans-italic-webfont.woff") format('woff'),
+       url("/fonts/webfontkit-20210120-113730/worksans-italic-webfont.ttf") format('truetype');
+  font-style: italic;
+
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,8 +31,23 @@
   color: inherit;
   text-decoration: none;
   list-style: none;
-  font-family: "Work sans";
 }
+
+body {
+  font-family: "work_sans";
+}
+
+
+/*-------------------Retirer la croix des inputs search----------------*/
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /*----------------Menu Burger------------------------*/
 .main-nav {
@@ -127,24 +168,32 @@
   width: 0.9287109375em;
 }
 
+.icon-heart-o {
+  color: #613CEA;
+}
+
 h1 {
   color: #38454C;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   text-align: center;
+  margin: 20px 0px;
 }
+
+/*------------------SECTION - Formulaire----------------------*/
 
 .formulaire {
   padding: 20px 20px;
+  background-color: #FFE8A6;
 }
 
 
 label {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 input {
-  padding: 1rem .5rem;
+  padding: 10px 5px;
   border: solid #E6E6E6 1px;
   border-radius: 8px;
   width: 100%;
@@ -152,44 +201,54 @@ input {
 }
 
 input[type="date"] {
-  font-size: 16px;
+  font-size: 14px;
   color: #777575;
-  width: 150px;
   text-transform: uppercase;
+  font-family: "work_sans",arial;
 }
 
 
 input::placeholder {
-  font-size: 16px;
+  font-size: 14px;
 }
 .depart {
   display: flex;
   flex-direction: column;
+  margin: 10px 0px;
 }
 
 .arrive {
   display: flex;
   flex-direction: column;
+  margin: 10px 0px;
 }
 
 .aller-retour {
   display: flex;
   flex-direction: row;
+  margin: 10px 0px;
+  align-items: stretch;
 }
 
 .aller {
   display: flex;
   flex-direction: column;
+  width: 47%;
+  margin-right: 2.5%;
+
 }
 
 .retour {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  width: 47%;
+  margin-left: 2.5%;
 }
 
 button {
   font-size: 16px;
-  padding: 1rem .5rem;
+  padding: 10px 5px;
   width: 100%;
   font-weight: 500;
   margin: 1rem 0rem;
@@ -207,7 +266,7 @@ button:focus {
 h2 {
   color: #38454C;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   margin: 2rem 0rem;
 }
@@ -216,7 +275,7 @@ h2 {
   display: block;
   font-size: 16px;
   text-align: center;
-  padding: 1rem .5rem;
+  padding: 10px 5px;
   width: 100%;
   font-weight: 500;
   border: none;
@@ -225,37 +284,116 @@ h2 {
   background-color: #FFBE00
 }
 
-.suggestions1 {
-  padding: 20px 20px;
-}
+/*-------------------------SECTION - Derniers billets mis en ligne-------------------------*/
+
 
 h3 {
   color: #4E00E9;
-  font-size: 20px;
-  font-weight: 600;
-  margin: 2rem 0rem;
+  font-size: 16px;
+  font-weight: 500;
+  
 }
+
+.titre_suggestion {
+  margin: 10px 20px;
+}
+
+/*Création du template d'une annonce d'un billet en ligne */
 
 .ticket {
   display: flex;
   flex-direction: column;
+  background-color: #F9F9F9;
+  margin-right: 20px;
+  width: 250px;
+  height: 270px;
+  box-shadow: 0px 3px 5px 0px rgba(16, 42, 67, 0.1);
+-moz-box-shadow: 0px 3px 5px 0px rgba(16, 42, 67, 0.1);
+-webkit-box-shadow: 0px 3px 5px 0px rgba(16, 42, 67, 0.1);
 }
 
 .img_ticket {
-  width: 100px;
+  width: 100%;
+}
+
+.description {
+  padding: 20px 20px;
 }
 
 h4 {
   color: #38454C;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.button_last_ticket {
+p {
+  color: #38454C;
+  font-size: 14px;
+}
+
+time {
+  color: #38454C;
+  font-size: 14px;
+  display: block;
+}
+
+.route {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.icon_route {
+  margin: 0% 2%;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.city {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottom_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/*Creation du slider*/
+
+.slider {
+  border: none;
+  width: 100%;
+  height: 270px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+}
+
+.slides {
+  display: flex;
+  width: 400vw;
+  transition: transform 0.3s;
+}
+
+/*Bouton dernier billets mis en ligne*/
+
+
+.button_last_ticket, .button_discount {
   display: block;
   font-size: 16px;
   text-align: center;
-  padding: 1rem .5rem;
-  width: 100%;
+  padding: 10px 5px;
+  width: 90%;
+  margin: auto;
   font-weight: 500;
   border: solid 3px #4E00E9;
   border-radius: 8px;
