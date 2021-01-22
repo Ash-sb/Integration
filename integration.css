@@ -5,6 +5,7 @@
   src: url("/fonts/webfontkit-20210120-113730/worksans-regular-webfont.woff2") format('woff2'),
        url("/fonts/webfontkit-20210120-113730/worksans-regular-webfont.woff") format('woff'),
        url("/fonts/webfontkit-20210120-113730/worksans-regular-webfont.ttf") format('truetype');
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
   src: url("/fonts/webfontkit-20210120-113730/worksans-medium-webfont.woff2") format('woff2'),
        url("/fonts/webfontkit-20210120-113730/worksans-medium-webfont.woff") format('woff'),
        url("/fonts/webfontkit-20210120-113730/worksans-medium-webfont.ttf") format('truetype');
+  font-display: swap;
   font-weight: 500;
 }
 
@@ -20,6 +22,7 @@
   src: url("/fonts/webfontkit-20210120-113730/worksans-italic-webfont.woff2") format('woff2'),
        url("/fonts/webfontkit-20210120-113730/worksans-italic-webfont.woff") format('woff'),
        url("/fonts/webfontkit-20210120-113730/worksans-italic-webfont.ttf") format('truetype');
+  font-display: swap;
   font-style: italic;
 
 }
@@ -52,7 +55,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 /*----------------Menu Burger------------------------*/
 .main-nav {
   display: flex;
-  height: 10vh;
+  height: 60px;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -84,7 +87,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   height: 4px;
   width: 25px;
   margin: 4px 0;
-  background: #daf8e3;
+  background: white;
   transition: transform 0.75s ease, opacity 0.75s ease;
 }
 
@@ -113,7 +116,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   }
   .nav-links {
     position: fixed;
-    top: 10vh;
+    top: 60px;
     right: 0;
     height: 92vh;
     width: 50%;
@@ -129,13 +132,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /*----------------------------Fin burger menu------------------------*/
 
-
-
-.img2 {
-  height: 150px;
-  width: 150px;
-}
-
+/*--------------------- Adding Icons----------------------*/
 .icon {
   display: inline-block;
   width: 1em;
@@ -150,11 +147,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .icon-shield {
-  width: 0.7138671875em;
+  width: 0.60em;
+  margin-left: 3px;
 }
 
 .icon-group {
-  width: 1.0712890625em;
+  width: 0.8em;
+  margin-left: 3px;
 }
 
 .icon-long-arrow-right {
@@ -169,6 +168,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   color: #613CEA;
 }
 
+/*--------------------- End Adding Icons----------------------*/
+
 h1 {
   color: #38454C;
   font-size: 20px;
@@ -180,6 +181,7 @@ h1 {
 /*------------------SECTION - Formulaire----------------------*/
 
 .formulaire {
+  margin-top: 30px;
   padding: 20px 20px;
   background-color: #FFE8A6;
 }
@@ -187,6 +189,8 @@ h1 {
 
 label {
   font-size: 16px;
+  font-weight: 500;
+  color: #38454C;
 }
 
 input {
@@ -204,6 +208,9 @@ input[type="date"] {
   font-family: "work_sans",arial;
 }
 
+input:focus {
+  outline: none;
+}
 
 input::placeholder {
   font-size: 14px;
@@ -292,11 +299,13 @@ h3 {
   color: #4E00E9;
   font-size: 16px;
   font-weight: 500;
+  text-align: center;
   
 }
 
 .titre_suggestion {
   margin: 10px 20px;
+  text-align: start;
 }
 
 /*Création du template d'une annonce d'un billet en ligne */
@@ -315,6 +324,7 @@ h3 {
 
 .img_ticket {
   width: 100%;
+  height: 150px;
 }
 
 .description {
@@ -327,7 +337,7 @@ h4 {
   font-weight: 500;
 }
 
-p {
+p, blockquote {
   color: #38454C;
   font-size: 14px;
 }
@@ -346,6 +356,8 @@ time {
 }
 
 .icon_route {
+  width: auto;
+  height: auto;
   margin: 0% 2%;
 }
 
@@ -403,7 +415,7 @@ time {
 /*Bouton dernier billets mis en ligne*/
 
 
-.button_last_ticket, .button_discount, .button_popular_route {
+.button_last_ticket, .button_discount, .button_popular_route, .see_opinion {
   display: block;
   font-size: 16px;
   text-align: center;
@@ -443,6 +455,7 @@ time {
 .img {
   height: 150px;
   width: 150px;
+  margin: 10px;
 }
 
 .explanation {
@@ -451,14 +464,170 @@ time {
   align-items: center;
 }
 
-.text_explanation {
+.text_explanation, blockquote {
   text-align: center;
 }
 
 h3 {
-  margin: 5px ;
+  margin: 5px;
 }
 
 .button_search {
   background-color: #4E00E9;
+}
+
+/*-------------------------SECTION - Insurance ?-------------------------*/
+
+.insurance {
+  padding: 20px 20px;
+}
+
+.insurance, .control, .opinion{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.title_insurance {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.img2 {
+  height: 150px;
+  width: 150px;
+  margin: 20px;
+}
+
+.people_opinion {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.profil_pic {
+  width: 60px;
+  height: 56px
+}
+
+.profil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 10px;
+}
+
+.note {
+  display: flex;
+  align-items:center;
+}
+
+.icon_star {
+  margin: -10px;
+}
+
+.see_opinion {
+  margin: 20px 0px 20px 0px;
+}
+
+/*-------------------------FOOTER-------------------------*/
+
+footer {
+  background-color: #4E00E9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p, footer a, footer li {
+  font-size: 12px;
+  color: white;
+}
+
+footer p {
+  text-align: center;
+  margin: 5px;
+}
+
+footer article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+h5 {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+
+.payment {
+  display: flex;
+  flex-direction: row;
+}
+
+.payment .img {
+  width: 69px;
+  height: 35px;
+}
+
+
+
+.social_media {
+  width: 100%;
+}
+
+.social_media_icon {
+  display:flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-evenly;
+}
+
+.social_media .icon {
+  color: white;
+  width: 35px;
+  height: 35px;
+
+}
+
+
+.icon-twitter {
+  width: 0.9287109375em;
+}
+
+.icon-instagram {
+  width: 0.857421875em;
+}
+
+.icon-facebook-square {
+  width: 0.857421875em;
+}
+
+.newsletter_mail {
+  position: relative;
+  width: 90%;
+}
+
+footer input {
+  width: 100%;
+  height: 37px;
+  padding: 10px 5px;
+  border: solid #E6E6E6 1px;
+  border-radius: 8px;
+}
+
+footer button {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  background-color: #FFBE00;
+  bottom: -16px;
+  right: 0px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+hr {
+  width: 50%;
 }
