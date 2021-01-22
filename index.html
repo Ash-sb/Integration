@@ -60,6 +60,22 @@
         <path d="M19.5 2c2.484 0 4.5 2.016 4.5 4.5v15c0 2.484-2.016 4.5-4.5 4.5h-2.938v-9.297h3.109l0.469-3.625h-3.578v-2.312c0-1.047 0.281-1.75 1.797-1.75l1.906-0.016v-3.234c-0.328-0.047-1.469-0.141-2.781-0.141-2.766 0-4.672 1.687-4.672 4.781v2.672h-3.125v3.625h3.125v9.297h-8.313c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15z"></path>
       </symbol>
     </svg>
+    <svg style="width:0; height: 0;">
+      <symbol id="icon-clock2" viewBox="-3 -4 36 32">
+        <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM20.586 23.414l-6.586-6.586v-8.828h4v7.172l5.414 5.414-2.829 2.829z"></path>
+      </symbol>
+    </svg>
+    <svg style="width:0; height: 0;">
+      <symbol id="icon-envelope-o" viewBox="0 0 28 28">
+        <path d="M26 23.5v-12c-0.328 0.375-0.688 0.719-1.078 1.031-2.234 1.719-4.484 3.469-6.656 5.281-1.172 0.984-2.625 2.188-4.25 2.188h-0.031c-1.625 0-3.078-1.203-4.25-2.188-2.172-1.813-4.422-3.563-6.656-5.281-0.391-0.313-0.75-0.656-1.078-1.031v12c0 0.266 0.234 0.5 0.5 0.5h23c0.266 0 0.5-0.234 0.5-0.5zM26 7.078c0-0.391 0.094-1.078-0.5-1.078h-23c-0.266 0-0.5 0.234-0.5 0.5 0 1.781 0.891 3.328 2.297 4.438 2.094 1.641 4.188 3.297 6.266 4.953 0.828 0.672 2.328 2.109 3.422 2.109h0.031c1.094 0 2.594-1.437 3.422-2.109 2.078-1.656 4.172-3.313 6.266-4.953 1.016-0.797 2.297-2.531 2.297-3.859zM28 6.5v17c0 1.375-1.125 2.5-2.5 2.5h-23c-1.375 0-2.5-1.125-2.5-2.5v-17c0-1.375 1.125-2.5 2.5-2.5h23c1.375 0 2.5 1.125 2.5 2.5z"></path>
+      </symbol>
+    </svg>
+    <svg style="width:0; height: 0;">
+      <symbol id="icon-bell-o" viewBox="0 0 28 28">
+        <path d="M14.25 26.5c0-0.141-0.109-0.25-0.25-0.25-1.234 0-2.25-1.016-2.25-2.25 0-0.141-0.109-0.25-0.25-0.25s-0.25 0.109-0.25 0.25c0 1.516 1.234 2.75 2.75 2.75 0.141 0 0.25-0.109 0.25-0.25zM3.844 22h20.312c-2.797-3.156-4.156-7.438-4.156-13 0-2.016-1.906-5-6-5s-6 2.984-6 5c0 5.563-1.359 9.844-4.156 13zM27 22c0 1.094-0.906 2-2 2h-7c0 2.203-1.797 4-4 4s-4-1.797-4-4h-7c-1.094 0-2-0.906-2-2 2.312-1.953 5-5.453 5-13 0-3 2.484-6.281 6.625-6.891-0.078-0.187-0.125-0.391-0.125-0.609 0-0.828 0.672-1.5 1.5-1.5s1.5 0.672 1.5 1.5c0 0.219-0.047 0.422-0.125 0.609 4.141 0.609 6.625 3.891 6.625 6.891 0 7.547 2.688 11.047 5 13z"></path>
+      </symbol>
+    </svg>
+
 
 
     <header>
@@ -69,12 +85,12 @@
           <text id="trains" transform="translate(77 19)" fill="#ffbe00" font-size="20" font-family="Work Sans" font-weight="500"><tspan x="0" y="0">trains</tspan></text>
         </svg>        
         <ul class="nav-links">
-          <li><a href="#">Vends tes billets</a></li>
-          <li><a href="#">Connectes toi</a></li>
-          <li><a href="#">messagerie</a></li>
-          <li><a href="#">favoris</a></li>
-          <li><a href="#">alertes</a></li>
-          <li><a href="#">Comment ça marche?</a></li>
+          <li><a class="nav_button_howitwork" href="#">Comment ça marche?</a></li>
+          <li><a href="#"><svg class="icon icon-bell-o"><use xlink:href="#icon-bell-o"></use></svg></a></li>
+          <li><a href="#"><svg class="icon icon-heart-o"><use xlink:href="#icon-heart-o"></use></svg></a></li>
+          <li><a href="#"><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg></a></li>
+          <li><a class="nav_button_connect" href="#">connecte toi</a></li>
+          <li><a class="nav_button_sale" href="#">vends tes billets</a></li>
         </ul>
         <div class="burger">
           <div class="line line1"></div>
@@ -154,7 +170,7 @@
                     </div>
                   </div>
                   <div class="bottom_description">
-                    <time datetime="3:25">3h25</time>
+                    <time datetime="3:25">3h25<svg class="icon icon-clock2"><use xlink:href="#icon-clock2" aria-hidden="true"></use></svg></time>
                     <p><strong>10€</strong></p>
                     <svg class="icon icon-heart-o"><use xlink:href="#icon-heart-o"></use></svg>
                   </div>
@@ -177,7 +193,7 @@
                     </div>
                   </div>
                   <div class="bottom_description">
-                    <time datetime="3:25">3h25</time>
+                    <time datetime="3:25">3h25<svg class="icon icon-clock2"><use xlink:href="#icon-clock2" aria-hidden="true"></use></svg></time>
                     <p><strong>10€</strong></p>
                     <svg class="icon icon-heart-o"><use xlink:href="#icon-heart-o"></use></svg>
                   </div>
@@ -200,7 +216,7 @@
                     </div>
                   </div>
                   <div class="bottom_description">
-                    <time datetime="3:25">3h25</time>
+                    <time datetime="3:25">3h25<svg class="icon icon-clock2"><use xlink:href="#icon-clock2" aria-hidden="true"></use></svg></time>
                     <p><strong>10€</strong></p>
                     <svg class="icon icon-heart-o"><use xlink:href="#icon-heart-o"></use></svg>
                   </div>
@@ -223,7 +239,7 @@
                     </div>
                   </div>
                   <div class="bottom_description">
-                    <time datetime="3:25">3h25</time>
+                    <time datetime="3:25">3h25<svg class="icon icon-clock2"><use xlink:href="#icon-clock2" aria-hidden="true"></use></svg></time>
                     <p><strong>10€</strong></p>
                     <svg class="icon icon-heart-o"><use xlink:href="#icon-heart-o"></use></svg>
                   </div>
@@ -255,7 +271,7 @@
                     </div>
                   </div>
                   <div class="bottom_description">
-                    <time datetime="3:25">3h25</time>
+                    <time datetime="3:25">3h25<svg class="icon icon-clock2"><use xlink:href="#icon-clock2" aria-hidden="true"></use></svg></time>
                     <p><strong>10€</strong></p>
                     <svg class="icon icon-heart-o"><use xlink:href="#icon-heart-o"></use></svg>
                   </div>
@@ -278,7 +294,7 @@
                     </div>
                   </div>
                   <div class="bottom_description">
-                    <time datetime="3:25">3h25</time>
+                    <time datetime="3:25">3h25<svg class="icon icon-clock2"><use xlink:href="#icon-clock2" aria-hidden="true"></use></svg></time>
                     <p><strong>10€</strong></p>
                     <svg class="icon icon-heart-o"><use xlink:href="#icon-heart-o"></use></svg>
                   </div>
@@ -358,19 +374,18 @@
       </section>
 
       <section class="insurance">
-        <div class="insurance_and_img">
-
+        <div class="insurance_and_img1">
+          <img class="img2" src="image/gamer-colour.svg" alt="Controle des billets">
           <article class="control">
             <h3 class="title_insurance">Les billets mis en ligne sont controlés<svg class="icon icon-check" aria-hidden="true"><use xlink:href="#icon-check"></use></svg></h3>
             <p class="text_explanation">Chaque billet de train est contrôlé avant d'être validé puis finalement déposé sur le site. Ceci garanti à nos visiteurs de trouver sur Trocdestrains uniquement des billets totalement valide et utilisable dès leurs réception.</p>
             <h3 class="title_insurance">Tes achats sont sécurisés<svg class="icon icon-shield" aria-hidden="true"><use xlink:href="#icon-shield"></use></svg></h3>
             <p class="text_explanation">Lorsque tu effectue un achat, tu es automatiquement protégé par la "garantie acheteur". Cette dernière t'offre une sécurité au niveau de tes achats et de tes informations personnelles. Grâce à elle, Trocdestrains conservera ton argent le temps que le vendeur envoie bien ton billet de train. Le coût est de 5% du prix de l'article + 0,50€.</p>
-
           </article>
-          <img class="img2" src="image/gamer-colour.svg" alt="Controle des billets">
+          
         </div>
         
-        <div class="insurance_and_img">
+        <div class="insurance_and_img2">
           <img class="img2" src="image/social-feed-colour.svg" alt="billet">
 
           <article class="opinion">
@@ -409,38 +424,45 @@
     </main>
 
     <footer>
-      <article>
-        <h5>Paiement 100% sécurisé</h5>
-        <div class="payment">
-          <img class="img" src="image/visa.svg" alt="visa">
-          <img class="img" src="image/paypal.svg" alt="paypal">
-          <img class="img" src="image/mastercard.svg" alt="mastercard">
-        </div>
-      </article>
+      <div class="footer_bloc">
+        <article>
+          <h5>Paiement 100% sécurisé</h5>
+          <div class="payment">
+            <img class="img" src="image/visa.svg" alt="visa">
+            <img class="img" src="image/paypal.svg" alt="paypal">
+            <img class="img" src="image/mastercard.svg" alt="mastercard">
+          </div>
+        </article>
+        <article>          
+          <h5>Besoin d'aide ?</h5>
+          </br>
+            <ul>
+              <li>- FAQ</li>
+              <li>- Service client 24h/7j</li>
+            </ul>
+        </article>
 
-        <h5>Besoin d'aide ?</h5>
-          <ul>
-            <li>- FAQ</li>
-            <li>- Service client 24h/7j</li>
-          </ul>
 
-      <article class="social_media">
-        <h5>Nos réseaux</h5>
-        <div class="social_media_icon">
-          <svg class="icon icon-facebook-square"><use xlink:href="#icon-facebook-square"></use></svg>
-          <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
-          <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-        </div>
-      </article>
+        <article class="social_media">
+          <h5>Nos réseaux</h5>
+          </br>
+          <div class="social_media_icon">
+            <svg class="icon icon-facebook-square"><use xlink:href="#icon-facebook-square"></use></svg>
+            <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+            <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+          </div>
+        </article>
 
-      <article>
-        <h5>Newsletter</h5>
-        <p>Soit alerté des derniers billets mis en vente en rejoingnant notre newsletter !</p>
-        <div class="newsletter_mail">
-          <input type="search" name="newsletter" id="newsletter" placeholder="Renseigne ton email"/>
-          <button>OK</button>
-        </div>
-      </article>
+        <article>
+        </br>
+          <h5>Newsletter</h5>
+          <p>Soit alerté des derniers billets mis en vente en rejoingnant notre newsletter !</p>
+          <div class="newsletter_mail">
+            <input type="search" name="newsletter" id="newsletter" placeholder="Renseigne ton email"/>
+            <button>OK</button>
+          </div>
+        </article>
+      </div>
 
       <hr>
 
@@ -448,8 +470,8 @@
         <a href="#">Charte de confidentialité et cookies</a>
       </article>
       <article>
-        <p>Qui sommes nous ? | Conditions générales de vente
-          Aides et accessibilités | Infos légales | Plan du site</p>
+        <p><a href="#">Qui sommes nous ?</a> | <a href="#">Conditions générales de vente</a>
+          <a href="#">Aides et accessibilités</a> | <a href="#">Infos légales</a> | <a href="#">Plan du site</a></p>
       </article>
     </footer>
 
