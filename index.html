@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="integration.css">
+    <link rel="preload" href="integration.css" as="style">
+    <link rel="preload" href="integration.js" as="script">
   </head>
 
 
@@ -475,7 +477,7 @@
     <footer>
       <div class="footer_bloc">
         <article>
-          <h5>Paiement 100% sécurisé</h5>
+          <p class="footer_title">Paiement 100% sécurisé</p>
           <div class="payment">
             <img class="img" src="image/visa.svg" alt="visa">
             <img class="img" src="image/paypal.svg" alt="paypal">
@@ -483,7 +485,7 @@
           </div>
         </article>
         <article>          
-          <h5>Besoin d'aide ?</h5>
+          <p class="footer_title">Besoin d'aide ?</p>
           </br>
             <ul>
               <li>- FAQ</li>
@@ -493,7 +495,7 @@
 
 
         <article class="social_media">
-          <h5>Nos réseaux</h5>
+          <p class="footer_title">Nos réseaux</p>
           </br>
           <div class="social_media_icon">
             <svg class="icon icon-facebook-square"><use xlink:href="#icon-facebook-square"></use></svg>
@@ -504,9 +506,10 @@
 
         <article>
         </br>
-          <h5>Newsletter</h5>
+          <p class="footer_title">Newsletter</p>
           <p>Soit alerté des derniers billets mis en vente en rejoingnant notre newsletter !</p>
           <div class="newsletter_mail">
+            <label for="newsletter">newsletter</label>
             <input type="search" name="newsletter" id="newsletter" placeholder="Renseigne ton email"/>
             <button>OK</button>
           </div>

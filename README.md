@@ -21,9 +21,15 @@ reprend le découpage que j'ai fait en HTML. A la fin du découpage, j'ai utilis
 en min-width: 877px, et à la suite de ça j'ai repris le meme découpage encore une fois mais cette fois ci pour
 la version desktop.
 
-Conscernant mon avis sur le projet, j'ai tenté de faire un menu burger qui soit fonctionnel, il affiche bien ce que je souhaite
+Conscernant mes commentaires sur le projet, j'ai tenté de faire un menu burger qui soit fonctionnel, il affiche bien ce que je souhaite
 pour la navbar en desktop mais je n'ai pas réussis à modifier le contenu de la nav bar en mobile par manque de temps.
+Pour lighthouse, j'ai eu du mal à gérer l'accessibilité (car les couleurs de mon site apparement rendaient le site moins accessible mais 
+je ne parvenais pas à trouver des couleurs qui allaient sans dénaturer ma maquette) et aussi la performance (je dois donner des width et height
+precises à mes images mais c'est déjà le cas)
+
 J'ai aussi eu l'occasion de tester mon site sur safari sur mon mobile et les input search et time n'ont pas du tout la même 
 apparance que lorsque l'on teste le site sur desktop et je n'ai pas du tout réussis à modifier cela. Dans l'ensemble je n'ai 
 pas rencontré de gros soucis, j'aurais aimé paufiner un peu les détails mais je manque de temps (j'ai un job étudiant donc certains soir
 et le week-end c'est difficile de travailler ahah)
+
+Sinon c'est tout, merci pour la semaine d'intégration c'était top !
